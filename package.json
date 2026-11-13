@@ -1,0 +1,24 @@
+{
+  "name": "spotgo",
+  "version": "1.0.0",
+  "description": "SpotGo: find and book study and work spaces in Cairo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "setup": "node setup-db.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [],
+  "author": "Masa Ibrahem",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "multer": "^2.5.0"
+  }
+}

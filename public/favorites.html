@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Favorites - SpotGo</title>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="Mystyle.css">
+  </head>
+  <body>
+    <div class="dash">
+      <aside class="dash-side">
+        <div class="logo">SpotGo</div>
+        <div class="area">User</div>
+
+        <a class="side-link" href="index.html">Workspaces</a>
+        <a class="side-link" href="my-bookings.html">My Bookings</a>
+        <a class="side-link active" href="favorites.html">Favorites</a>
+        <a class="side-link" href="events.html">Events</a>
+        <a class="side-link" href="map.html">Map</a>
+        <a class="side-link" href="compare.html">Compare</a>
+        <a class="side-link logout" href="#" id="logout-link">Log out</a>
+      </aside>
+
+      <div class="dash-main">
+        <h1>Favorites</h1>
+        <p class="area">The workspaces you saved. Click the heart on any workspace to save it.</p>
+
+        <p id="page-message" class="page-message"></p>
+        <div class="cards" id="cards"><p class="area">Loading...</p></div>
+      </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="ui.js"></script>
+    <script src="notif.js"></script>
+    <script src="dash-common.js"></script>
+    <script src="favorites.js"></script>
+  </body>
+</html>

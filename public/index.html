@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpotGo</title>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="Mystyle.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SpotGo</div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="map.html">Map</a>
+        <a href="compare.html">Compare</a>
+        <a href="events.html">Events</a>
+        <a href="login.html" id="auth-link">Log in</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <p class="greeting" id="greeting"></p>
+        <h1>Find Your Perfect Workspace</h1>
+        <p>Study, work, create. Discover the best workspaces in Cairo.</p>
+
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="Search by area, name, or room type (English or عربي)" aria-label="Search">
+          <select id="type-filter" aria-label="Room type">
+            <option value="">All room types</option>
+            <option value="Co-working Desk">Co-working Desk</option>
+            <option value="Meeting Room">Meeting Room</option>
+            <option value="Private Room">Private Room</option>
+            <option value="Quiet Desk Area">Quiet Desk Area</option>
+            <option value="Shared Space">Shared Space</option>
+            <option value="Workshop Room">Workshop Room</option>
+          </select>
+          <select id="price-filter" aria-label="Maximum price per hour">
+            <option value="">Any price</option>
+            <option value="20">Up to EGP 20 / hour</option>
+            <option value="30">Up to EGP 30 / hour</option>
+            <option value="50">Up to EGP 50 / hour</option>
+            <option value="100">Up to EGP 100 / hour</option>
+          </select>
+          <button id="search-btn">Search</button>
+          <button id="near-btn" class="near-btn" type="button">Near me</button>
+        </div>
+        <p id="near-message" class="near-message"></p>
+      </section>
+
+      <section class="popular">
+        <h2>Popular Workspaces</h2>
+
+        <div class="cards" id="cards"></div>
+
+        <p id="no-results" class="no-results">No workspaces found.</p>
+      </section>
+    </main>
+    <script src="i18n.js"></script>
+    <script src="ui.js"></script>
+    <script src="geo.js"></script>
+    <script src="script.js"></script>
+    <script src="nav.js"></script>
+  </body>
+</html>

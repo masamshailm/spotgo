@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin - SpotGo</title>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="Mystyle.css">
+  </head>
+  <body>
+    <div class="dash">
+      <aside class="dash-side">
+        <div class="logo">SpotGo</div>
+        <div class="area">Admin Panel</div>
+
+        <a class="side-link active" href="admin.html">Dashboard</a>
+        <a class="side-link" href="#panel" data-go="users">Users</a>
+        <a class="side-link" href="#panel" data-go="workspaces">Workspaces</a>
+        <a class="side-link" href="#panel" data-go="reports">Reports</a>
+        <a class="side-link logout" href="#" id="logout-link">Log out</a>
+      </aside>
+
+      <div class="dash-main">
+        <h1>Admin dashboard</h1>
+        <p class="area">Manage users and workspaces.</p>
+
+        <div class="stats">
+          <div class="stat"><div class="stat-label">Users</div><div class="stat-value" id="stat-users">0</div></div>
+          <div class="stat"><div class="stat-label">Workspaces</div><div class="stat-value" id="stat-workspaces">0</div></div>
+          <div class="stat"><div class="stat-label">Bookings</div><div class="stat-value" id="stat-bookings">0</div></div>
+          <div class="stat"><div class="stat-label">Income (EGP)</div><div class="stat-value" id="stat-income">0</div></div>
+          <div class="stat"><div class="stat-label">Open reports</div><div class="stat-value" id="stat-reports">0</div></div>
+          <div class="stat"><div class="stat-label">Workspace page visitors</div><div class="stat-value" id="stat-views">0</div></div>
+        </div>
+
+        <div class="dash-panel" id="panel">
+          <div class="tabs">
+            <button class="tab active" data-tab="users">Users</button>
+            <button class="tab" data-tab="workspaces">Workspaces</button>
+            <button class="tab" data-tab="reports">Reports <span id="count-reports"></span></button>
+          </div>
+
+          <p id="admin-message" class="login-error"></p>
+          <div id="list"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="ui.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>
