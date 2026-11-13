@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Earnings - SpotGo</title>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="Mystyle.css">
+  </head>
+  <body>
+    <div class="dash">
+      <aside class="dash-side">
+        <div class="logo">SpotGo</div>
+        <div class="area">Owner Panel</div>
+
+        <a class="side-link" href="manager.html">Dashboard</a>
+        <a class="side-link" href="manager-workspaces.html">My Workspaces</a>
+        <a class="side-link" href="manager-availability.html">Availability</a>
+        <a class="side-link" href="manager-events.html">Events</a>
+        <a class="side-link active" href="manager-earnings.html">Earnings</a>
+        <a class="side-link" href="manager-reviews.html">Reviews</a>
+        <a class="side-link logout" href="#" id="logout-link">Log out</a>
+      </aside>
+
+      <div class="dash-main">
+        <h1>Earnings</h1>
+        <p class="area">Customers pay you directly. These numbers come from the bookings you confirmed.</p>
+
+        <p id="page-message" class="page-message"></p>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-label">Income from confirmed bookings (EGP)</div>
+            <div class="stat-value" id="stat-income">0</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Waiting for your confirmation (EGP)</div>
+            <div class="stat-value" id="stat-pending">0</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Confirmed bookings</div>
+            <div class="stat-value" id="stat-count">0</div>
+          </div>
+        </div>
+
+        <div class="dash-panel">
+          <h2>By workspace</h2>
+          <table class="data-table" id="by-workspace"></table>
+        </div>
+
+        <div class="dash-panel spaced">
+          <h2>By month</h2>
+          <table class="data-table" id="by-month"></table>
+        </div>
+      </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="ui.js"></script>
+    <script src="notif.js"></script>
+    <script src="dash-common.js"></script>
+    <script src="manager-earnings.js"></script>
+  </body>
+</html>

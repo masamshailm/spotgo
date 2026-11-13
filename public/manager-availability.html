@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Availability - SpotGo</title>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="Mystyle.css">
+  </head>
+  <body>
+    <div class="dash">
+      <aside class="dash-side">
+        <div class="logo">SpotGo</div>
+        <div class="area">Owner Panel</div>
+
+        <a class="side-link" href="manager.html">Dashboard</a>
+        <a class="side-link" href="manager-workspaces.html">My Workspaces</a>
+        <a class="side-link active" href="manager-availability.html">Availability</a>
+        <a class="side-link" href="manager-events.html">Events</a>
+        <a class="side-link" href="manager-earnings.html">Earnings</a>
+        <a class="side-link" href="manager-reviews.html">Reviews</a>
+        <a class="side-link logout" href="#" id="logout-link">Log out</a>
+      </aside>
+
+      <div class="dash-main">
+        <h1>Availability</h1>
+        <p class="area">Close a time slot when the room is not available (for example, maintenance), or open it again.</p>
+
+        <p id="page-message" class="page-message"></p>
+
+        <div class="dash-panel">
+          <div class="form-grid">
+            <label>Room <select id="room-select"></select></label>
+            <label>Date <input type="date" id="day-input"></label>
+          </div>
+
+          <p class="area" id="open-until"></p>
+          <button id="add-days-btn" class="book-btn small-btn" type="button">Open 7 more days</button>
+
+          <div class="legend">
+            <span class="slot-state free">Available</span>
+            <span class="slot-state blocked">Closed by you</span>
+            <span class="slot-state booked">Booked</span>
+            <span class="slot-state passed">Passed</span>
+          </div>
+
+          <div class="slots" id="manager-slots"></div>
+          <p class="area">Click a free slot to close it. Click a closed slot to open it again.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="ui.js"></script>
+    <script src="notif.js"></script>
+    <script src="dash-common.js"></script>
+    <script src="manager-availability.js"></script>
+  </body>
+</html>

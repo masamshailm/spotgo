@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reviews - SpotGo</title>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="Mystyle.css">
+  </head>
+  <body>
+    <div class="dash">
+      <aside class="dash-side">
+        <div class="logo">SpotGo</div>
+        <div class="area">Owner Panel</div>
+
+        <a class="side-link" href="manager.html">Dashboard</a>
+        <a class="side-link" href="manager-workspaces.html">My Workspaces</a>
+        <a class="side-link" href="manager-availability.html">Availability</a>
+        <a class="side-link" href="manager-events.html">Events</a>
+        <a class="side-link" href="manager-earnings.html">Earnings</a>
+        <a class="side-link active" href="manager-reviews.html">Reviews</a>
+        <a class="side-link logout" href="#" id="logout-link">Log out</a>
+      </aside>
+
+      <div class="dash-main">
+        <h1>Reviews</h1>
+        <p class="area">What customers say about your workspaces. Report a review to the admin if it breaks the rules.</p>
+
+        <p id="page-message" class="page-message"></p>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-label">Reviews</div>
+            <div class="stat-value" id="stat-count">0</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Average rating</div>
+            <div class="stat-value" id="stat-average">-</div>
+          </div>
+        </div>
+
+        <div class="dash-panel">
+          <div id="list"><p class="area">Loading...</p></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="ui.js"></script>
+    <script src="notif.js"></script>
+    <script src="dash-common.js"></script>
+    <script src="manager-reviews.js"></script>
+  </body>
+</html>
